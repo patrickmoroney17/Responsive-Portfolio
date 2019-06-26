@@ -208,12 +208,15 @@ input[type=submit] {
     border: 0 none;
 }
 
+.fixed-header {
+    top: 0;
+}
+
+
 /* [980px](Images/980-index.jpg),     [768px](Images/768-index.jpg),     [640px](Images/640-index.jpg) */
 
 @media screen and (max-width: 980px) {
-    /* The body's bg color will be #333 */
     body {
-      background-color: blue;
       color: orange;
     }
   
@@ -224,28 +227,27 @@ input[type=submit] {
   }
 
 @media screen and (max-width: 768px) {
-/* The body's bg color will be #333 */
     body {
-        background-color: purple;
         color: green;
     }
 
     .container {
-        /* width: 600px; */
         font-style: italic;
     }
 }
 
 @media screen and (max-width: 640px) {
-    /* The body's bg color will be #333 */
     body {
-        background-color: cyan;
         color: pink;
     }
-    
-    .container {
-        /* width: 600px; */
-        font-style: italic;
+
+    .fixed-header {
+        width: 100%;
+        position: fixed;
+        /* padding: 10px 0; */
     }
 
+    .container {
+        font-style: italic;
+    }
 }
